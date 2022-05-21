@@ -2,16 +2,18 @@ package entidades;
 
 public abstract class Conta implements Iconta{
 	
+	private static final int AGENCIA = 4400;
+	private static  int NUMEROCONTA = 0;
 	protected Clientes Cliente;
 	protected int numeroConta;
 	protected int agencia;
 	protected double saldo;
 	
-	public Conta(Clientes cliente, int numeroConta, int agencia, double saldo) {
+	public Conta(Clientes cliente, double saldo) {
 		
 		Cliente = cliente;
-		this.numeroConta = numeroConta;
-		this.agencia = agencia;
+		this.numeroConta = NUMEROCONTA++;
+		this.agencia = AGENCIA;
 		this.saldo = saldo;
 	}
 

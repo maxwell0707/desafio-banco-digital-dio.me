@@ -2,20 +2,20 @@ package entidades;
 
 public class ContaCorrente extends Conta {
 
-	public ContaCorrente(Clientes cliente, int numeroConta, int agencia, double saldo) {
-		super(cliente, numeroConta, agencia, saldo);
+	public ContaCorrente(Clientes cliente,double saldo) {
+		super(cliente, saldo);
 		// TODO Auto-generated constructor stub
 	}
 
 	@Override
 	public void Saque(double valor) {
-		saque(valor);
+		this.saque(valor);
 		
 	}
 
 	@Override
 	public void deposito(double valor) {
-		this.deposito(valor);
+		this.saldo += valor;
 		
 	}
 
