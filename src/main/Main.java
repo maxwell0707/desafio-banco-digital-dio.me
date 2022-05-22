@@ -28,9 +28,11 @@ public class Main {
 		santander.addConta(b);
 		santander.addConta(c);
 		santander.addConta(d);
-		a.transferencia(b, 1000.0);
+		/*a.transferencia(b, 1000.0);
+		b.transferencia(a, 50000.0);
+		a.saque(25000.0);
 		
-		
+		*/
 		System.out.println("quantidade de contas:" +santander.quantidadeDeContas());
 		santander.ListaContas();
 

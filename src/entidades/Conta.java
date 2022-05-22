@@ -44,12 +44,12 @@ public abstract class Conta implements Iconta{
 	
 		
 	}
-	public String toString(){
+	public String extrato(){
 		return "cliente: "
 		+Cliente.getNome()
 		+"\nAgencia: "
 		+ getAgencia()
-		+"\nConta: "
+		+" /Conta: "
 		+getNumeroConta()
 		+"\nSaldo: R$ "
 		+String.format("%.2f",getSaldo());

@@ -32,7 +32,7 @@ public class Banco {
 
 	public void ListaContas() {
 		for (Conta c : listContas) {
-			System.out.println(c.toString());
+			System.out.println(c.extrato());
 		}
 	}
 

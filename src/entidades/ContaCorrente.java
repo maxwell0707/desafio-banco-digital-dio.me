@@ -9,9 +9,9 @@ public class ContaCorrente extends Conta {
 
 	@Override
 	public void Saque(double valor) {
-		this.saque(valor);
-		
-	}
+		//taxa de saque
+		this.saldo -= (valor + 1);
+		}
 
 	@Override
 	public void deposito(double valor) {
